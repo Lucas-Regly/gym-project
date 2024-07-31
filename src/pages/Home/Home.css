@@ -1,0 +1,644 @@
+.banner {
+    width: 100%;
+    height: 1000px;
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/assets/peitoral-cinza.jpg');
+    position: relative;
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    right: 0px;
+    background-color: #0000006b;
+    z-index: 0;
+    clip-path: polygon(20% 0, 100% 0%, 100% 100%, 0% 100%)
+}
+
+.banner::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 33%;
+    right: 0;
+    background-color: rgba(207, 145, 31, 0.274);
+    z-index: 0;
+    clip-path: polygon(20% 0, 100% 0%, 100% 100%, 0% 100%)
+}
+
+.before::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 18%;
+    top: 0;
+    right: 0;
+    background-color: rgba(207, 31, 31, 0.274);
+    z-index: 0;
+    clip-path: polygon(30% 0, 100% 0%, 100% 100%, 0% 100%)
+}
+
+.home-banner-container {
+    height: 300px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1;
+    padding-left: 500px;
+    transition: all 1s ease;
+}
+
+.home-banner-container span {
+    color: yellow;
+}
+
+.home-banner-titulo {
+    font-size: 80px;
+}
+
+.home-banner-paragrafo {
+    font-size: 30px;
+}
+
+.home-banner-link {
+    width: 130px;
+    color: #fff;
+    font-size: 20px;
+    background-color: rgb(156, 156, 4);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.home-banner-link:hover {
+    transition: all .3s ease-in-out;
+    background-color: rgb(216, 216, 3);
+}
+
+.pen-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.pen-container>p {
+    color: #fff;
+}
+
+.pen-subcontainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 27px;
+    height: 240px;
+    width: 100%;
+    padding: 0px 20px;
+    margin: 80px 0;
+    flex-wrap: wrap;
+}
+
+
+
+.icone-laranja p {
+    color: #FFD700;
+    background-color: #232323;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .4s ease;
+    font-size: 35px;
+    margin: 0 0 5px 0;
+}
+
+.icone-laranja p:hover {
+    color: #fff;
+    background-color: #FFD700;
+
+}
+
+.why-chose-us-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+    width: 400px;
+    text-align: center;
+}
+
+.why-chose-us-card h3 {
+    color: #fff;
+    font-size: 25px;
+}
+
+.p-dois {
+    color: #b8b4b4;
+    line-height: 20px;
+}
+
+.pq-escolher-nos-section {
+    background-color: #0A0A0A;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.h2-p h2 {
+    font-size: 25px;
+    margin: 0 0 10px 0;
+    color: #FFD700;
+}
+
+.h2-p p {
+    font-size: 45px;
+    font-weight: 900;
+    color: #fff;
+}
+
+.limita-largura {
+    margin: 80px auto;
+    max-width: 1300px;
+    width: 100%;
+    text-align: center;
+    padding: 0 1px;
+}
+
+.oqo-container {
+    width: 100%;
+    margin: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+}
+
+
+
+.oqo-subcontainer {
+    flex-grow: 1;
+    justify-content: center;
+    display: flex;
+
+}
+
+.oqo-card {
+    width: 400px;
+    height: 325px;
+    position: relative;
+    flex-grow: 1;
+}
+
+.oqo-card::after {
+    content: '';
+    width: 100.1%;
+    height: 40%;
+    background-color: #464646;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    clip-path: polygon(0 41%, 100% 0, 100% 100%, 0% 100%);
+    z-index: 0;
+}
+
+.oqo-card::before {
+    content: '';
+    width: 100.1%;
+    height: 38%;
+    background-color: #0A0A0A;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    clip-path: polygon(0 41%, 100% 0, 100% 100%, 0% 100%);
+    z-index: 1;
+}
+
+.oqo-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.oqo-card span {
+    position: absolute;
+    font-size: 25px;
+    bottom: 5%;
+    left: 5%;
+    color: #FFD700;
+    z-index: 3;
+}
+
+.home-banner-dois {
+    width: 100%;
+    height: 500px;
+    background-image: url('/assets/mulher-fazendo-prancha.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.home-banner-dois::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #0a0a0a96;
+    position: absolute;
+}
+
+.hbd-container h2 {
+    color: #fff;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.hbd-container p {
+    font-size: 30px;
+    color: #f1f1f1;
+}
+
+.hbd-container {
+    z-index: 998;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.np-card {
+    width: 400px;
+    height: 600px;
+    border: 3px solid #333333;
+    transition: all .4s ease-in;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    clip-path: polygon(0 6%, 100% 0%, 100% 96%, 0% 100%);
+    position: relative;
+    background-color: #333333;
+}
+
+.np-card::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #151515;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    clip-path: polygon(0 6%, 100% 0%, 100% 96%, 0% 100%);
+}
+
+.np-card:hover h4,
+.np-card:hover p {
+    color: #000;
+    transition: all .4s ease-in;
+}
+
+.np-card:hover a {
+    background-color: #FFD700;
+    transition: all .2s ease-in;
+}
+
+.np-card:hover::before {
+    background-color: #fff;
+    transition: all .2s ease-in;
+}
+
+.np-card h4 {
+    font-size: 40px;
+    color: #fff;
+}
+
+.np-card span {
+    font-size: 60px;
+    color: #FFD700;
+
+}
+
+.np-direitos {
+    color: #d1c3c3;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.np-card a {
+    color: #fff;
+    font-size: 25px;
+    padding: 10px;
+    background-color: #333333;
+    width: 60%;
+    margin: 0 auto;
+
+}
+
+.np-subcontainer {
+    padding: 70px 0;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+.galeria-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.cinquenta-porcento {
+    width: 49%;
+}
+
+.vinte-e-cinco-porcento {
+    width: 24%;
+}
+
+
+.section-nosso-time>.limita-largura {
+    text-align: left;
+}
+
+.carousel-fundo-cinza {
+    position: absolute;
+    width: 100%;
+    background-color: gray;
+    height: 0;
+    bottom: 0;
+    clip-path: polygon(0 30%, 100% 0, 100% 100%, 0% 100%);
+    transition: all .3s ease-in-out;
+    z-index: 0;
+}
+
+
+
+.carousel-fundo-preto {
+    position: absolute;
+    width: 100%;
+    background-color: black;
+    height: 0;
+    bottom: 0;
+    clip-path: polygon(0 30%, 100% 0, 100% 100%, 0% 100%);
+    transition: all .3s ease-in-out;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.carousel-card:hover>.carousel-fundo-cinza {
+    height: 36.1%;
+}
+
+.carousel-card:hover>.carousel-fundo-preto {
+    height: 35%;
+}
+
+.carousel-fundo-preto h5 {
+    color: #fff;
+    font-size: 23px;
+    margin: 5px;
+}
+
+.carousel-fundo-preto span {
+    color: gray;
+    font-size: 20px;
+}
+
+
+.opacity-zero {
+    opacity: 0;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.nosso-time-carousel {
+    display: flex;
+    margin: 70px auto;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1400px;
+    cursor: grab;
+}
+
+.inner {
+    display: flex;
+}
+
+
+.carousel-card {
+    width: 360px;
+    height: 460px;
+    position: relative;
+    margin: 0 14px;
+}
+
+.carousel-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.section-contato {
+    background-color: #0A0A0A;
+    display: flex;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.section-contato i {
+    color: #fff;
+    background-color: #FFD700;
+    font-size: 40px;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.setaBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 40px;
+    border: none;
+    width: 60px;
+    height: 60px;
+    background-color: #FFD700;
+    border-radius: 50%;
+    z-index: 999;
+    transition: all .2s ease-in;
+}
+
+
+
+.contato-card {
+    color: #fff;
+    display: flex;
+    width: 400px;
+    height: 150px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+}
+
+.contato-card p {
+    font-size: 17px;
+}
+
+.contato-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    width: 100%;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+
+
+.rodape {
+
+    background-color: #0A0A0A;
+    width: 100%;
+
+}
+
+.contato-container div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.rodape-container {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #ccc;
+    width: 70%;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.rodape-container a {
+    color: #FFD700;
+}
+
+.rodape p {
+    margin: 30px 0 70px 0;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+@media(max-width: 910px) {
+    .contato-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carousel-card {
+        width: 220px;
+        height: 300px;
+    }
+
+    .contato-container .contato-card:first-child {
+        margin-left: 100px;
+    }
+
+    .home-banner-container {
+        padding: 0 0 0 20px;
+
+    }
+}
+
+@media(max-width:550px) {
+
+    .pen-subcontainer div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .oqo-container div {
+        width: 100%;
+    }
+
+    .np-subcontainer div {
+        width: 99%;
+    }
+
+    .contato-card {
+        text-align: left;
+        flex-wrap: wrap;
+        margin: 0;
+        width: auto;
+    }
+
+    .contato-container {
+        align-items: start;
+    }
+
+    .contato-container .contato-card:first-child {
+        margin: 0;
+    }
+
+
+}
+
+@media(max-width:1310px) {
+    .pq-escolher-nos-section {
+
+        padding: 15px 0 500px 0;
+
+    }
+
+    .h2-p p {
+        font-size: 35px;
+    }
+
+    .section-nosso-time .h2-p {
+        padding-left: 20px;
+    }
+}
+
+@media(max-width:686px) {
+
+    .vinte-e-cinco-porcento,
+    .cinquenta-porcento {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+}
